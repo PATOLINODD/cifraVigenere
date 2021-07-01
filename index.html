@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="estilo.css"/>
+	<title> Cifra de Vigenere </title>
+</head> 
+ <body> 
+  <header id="form" class="bordas"> 
+   <h1>Cifra de VIGENERE</h1> 
+   <div id="deCifras"> 
+    <div class="align"> 
+     <label>CRIPTOGRAFAR</label> 
+     <input class="input t" type="radio" name="sel" value="grafar"> 
+     <label>DESCRIPTOGRAFAR</label> 
+     <input class="input u" type="radio" name="sel" value="decifrar"> 
+    </div> 
+    <div class="display"> 
+     <label>Digite uma chave<b id="right">?</b></label> 
+     <div id="info"> 
+      <p>uma chave é um texto usado como referência para a codificação! </p> 
+      <ul> 
+       <fieldset> 
+        <legend>Ex:</legend> 
+        <li> esse é meu texto </li> 
+        <li> chave </li> 
+        <ul> 
+         <fieldset> 
+          <legend>Resultado:</legend> 
+          <li> esseemeutexto </li> 
+          <li> chavechavecha </li> 
+         </fieldset> 
+        </ul> Obs: a chave deve ser menor que seu texto. 
+       </fieldset> 
+      </ul> 
+     </div> 
+     <input id="chave" class="bordas" type="text" placeholder="ex: campeao"> 
+    </div> 
+   </div> 
+   <div> 
+    <textarea id="grafar" class="bordas" placeholder="seu texto a ser alterado" cols="25em" rows="5em"></textarea> 
+   </div> 
+   <button id="valor" class="bordas">Ok</button> 
+   <div> 
+    <textarea id="grafado" class="bordas" cols="25em" rows="5em" disabled=""></textarea> 
+   </div> 
+  </header> 
+	<script src="vigenere.js"></script> 
+</body>
+</html>

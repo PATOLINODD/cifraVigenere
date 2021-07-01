@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#form {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: cyan;
+  width: 33em;
+}
+.bordas {
+  border: 2px solid darkblue;
+  border-radius: 0.2em;
+}
+.display {
+  display: flex;
+  flex-flow: column;
+}
+h1 {
+  padding-top: 0em;
+}
+#info{
+ display: none;
+}
+.align{
+  display: flex;
+  align-items: center;
+  }
+#right{
+  margin: 0% 0% 0% 50%;
+}
