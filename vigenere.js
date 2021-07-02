@@ -1,19 +1,19 @@
-const btn = document.querySelector("button");
-const texto = document.querySelector("#grafar");
-const area = document.querySelector("#grafado");
-const chave = document.getElementById("chave");
-const condicao = document.querySelector(".t");
-const condic = document.querySelector(".u");
-const info     = document.querySelector("#right");
+const btn 	= document.querySelector("button");
+const texto	= document.querySelector("#grafar");
+const area 	= document.querySelector("#grafado");
+const chave 	= document.getElementById("chave");
+const condicao 	= document.querySelector(".t");
+const condic 	= document.querySelector(".u");
+const info     	= document.querySelector("#right");
 let count = 1.5;
 
-info.onclick = ()=>{
-  count+= 1.5;
-  if(count%3 === 0){
-  document.querySelector("#info").style.display = "block";
-  }else{
-  document.querySelector("#info").style.display = "none";
-    }
+info.onclick = () =>{
+	count += 1.5;
+	if(count%3 === 0){
+  		document.querySelector("#info").style.display = "block";
+	}else{
+		document.querySelector("#info").style.display = "none";
+	}
 }
 
 function cifraVigenere(str, palavra){
