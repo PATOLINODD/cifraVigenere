@@ -2,33 +2,72 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  color: darkblue;
 }
 #form {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  align-items: center;
-  background-color: cyan;
+  background-color: #ffffff;
   width: 33em;
 }
-.bordas {
-  border: 2px solid darkblue;
-  border-radius: 0.2em;
+section{
+  display: flex;
+  }
+#label{
+   margin: 0% 0% 0% 30%;
 }
-.display {
+.items{
   display: flex;
   flex-flow: column;
+  align-items: center;
+  }
+.space{
+  margin: 1% 0% 1% 0%;
+  }
+.bordas {
+  border: 2px solid #333333;
+  border-radius: 0.2em;
 }
-h1 {
-  padding-top: 0em;
+#h1 {
+  text-align: right;
+  margin: 5% 25.5% 0% 0%;
+}
+#top{
+   height: 1em;
+   margin: 0% 0% 0% 0%;
+}
+#mid{
+   margin: 0% 0% 0% 0%;
+}
+#bottom{
+   margin: 0% 0% 0% 0%;
 }
 #info{
  display: none;
 }
-.align{
-  display: flex;
-  align-items: center;
+.RL{
+  margin: 5% 10% 0% 10%;
   }
 #right{
-  margin: 0% 0% 0% 50%;
+  margin: 0% 0% 0% 15%;
+}
+#right:hover{ 
+  font-size: 1.3em;
+  transition: 0.3s;
+  }
+.text{
+   background-color: #aaaaaa;
+   color: darkblue;
+}
+#valor{
+   background-color: darkblue;
+   border-color: darkblue;
+   color: #cccccc;
+}
+#chave{
+   width: 15.7em;
+}
+#down{
+   margin-top: 0.5em;
 }

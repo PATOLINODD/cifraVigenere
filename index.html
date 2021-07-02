@@ -7,44 +7,53 @@
 </head> 
  <body> 
   <header id="form" class="bordas"> 
-   <h1>Cifra de VIGENERE</h1> 
-   <div id="deCifras"> 
-    <div class="align"> 
+   <div id="h1"> 
+    <h1 id="top">EVIGENER</h1> 
+    <h1 id="mid">Cifra de VIGENERE</h1> 
+    <h1 id="bottom">IGENEREV</h1> 
+   </div> 
+   <section> 
+    <div class="RL"> 
+     <input class="input t space" type="radio" name="sel" value="grafar"> 
      <label>CRIPTOGRAFAR</label> 
-     <input class="input t" type="radio" name="sel" value="grafar"> 
-     <label>DESCRIPTOGRAFAR</label> 
-     <input class="input u" type="radio" name="sel" value="decifrar"> 
     </div> 
-    <div class="display"> 
-     <label>Digite uma chave<b id="right">?</b></label> 
+    <div class="RL"> 
+     <input class="input u space" type="radio" name="sel" value="decifrar"> 
+     <label>DESCRIPTOGRAFAR</label> 
+    </div> 
+   </section> 
+   <div id="down"> 
+    <label id="label">Digite uma chave<b id="right">?</b></label> 
+    <div class="items"> 
      <div id="info"> 
       <p>uma chave é um texto usado como referência para a codificação! </p> 
       <ul> 
        <fieldset> 
         <legend>Ex:</legend> 
-        <li> esse é meu texto </li> 
         <li> chave </li> 
+        <li> esse é meu texto </li> 
         <ul> 
          <fieldset> 
           <legend>Resultado:</legend> 
-          <li> esseemeutexto </li> 
           <li> chavechavecha </li> 
+          <li> esseemeutexto </li> 
          </fieldset> 
         </ul> Obs: a chave deve ser menor que seu texto. 
        </fieldset> 
       </ul> 
      </div> 
-     <input id="chave" class="bordas" type="text" placeholder="ex: campeao"> 
+     <input id="chave" class="bordas space text" type="text" placeholder="ex: campeao"> 
+     <div class="space"> 
+      <textarea id="grafar" class="bordas text" placeholder="seu texto a ser alterado" cols="25em" rows="5em"></textarea> 
+     </div> 
+     <div> 
+      <button id="valor" class="bordas space">Ok</button> 
+     </div> 
+     <div class="space"> 
+      <textarea id="grafado" class="bordas text" cols="25em" rows="5em" disabled=""></textarea> 
+     </div> 
     </div> 
    </div> 
-   <div> 
-    <textarea id="grafar" class="bordas" placeholder="seu texto a ser alterado" cols="25em" rows="5em"></textarea> 
-   </div> 
-   <button id="valor" class="bordas">Ok</button> 
-   <div> 
-    <textarea id="grafado" class="bordas" cols="25em" rows="5em" disabled=""></textarea> 
-   </div> 
   </header> 
-	<script src="vigenere.js"></script> 
-</body>
-</html>
+ 
+</body></html>
