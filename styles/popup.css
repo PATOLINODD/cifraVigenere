@@ -1,0 +1,59 @@
+.popup {
+  position: fixed;
+  z-index: 5;
+  bottom: 1rem;
+}
+
+.toast-message {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100dvw;
+  box-shadow: 1em 1.5em 1em var(--color-indigo-950);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-blue-950);
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.danger {
+  border: 2px solid var(--color-pink-600);
+}
+
+.warn {
+  border: 2px solid var(--color-orange-600);
+}
+
+.success {
+  border: 2px solid var(--color-sky-600);
+}
+
+.fade-out {
+  animation: fade-out 0.3s ease-in-out;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 770px) {
+  .children {
+    width: 100%;
+  }
+}
