@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "esnext",
+      "esnext.asynciterable"
+    ]
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,
+      "noEmit": true,
+      "strict": true,
+      "noImplicitAny": true,
+  },
+  "include": ["scripts"]
+}

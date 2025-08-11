@@ -1,0 +1,39 @@
+.highlight {
+  font-size: 1.2em;
+  animation: highlight 1s infinite;
+
+  &:active {
+    background-color: var(--color-pink-950);
+  }
+}
+
+
+.help {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 100dvh;
+  aspect-ratio: 1;
+  outline: none;
+  padding: 0.3rem;
+  anchor-name: --help-anchor;
+}
+
+
+@keyframes highlight {
+  0% {
+    background-color: var(--color-cyan-600);
+  }
+
+  33% {
+    background-color: var(--color-pink-600);
+  }
+
+  66% {
+    background-color: var(--color-cyan-600);
+  }
+
+  100% {
+    background-color: var(--color-pink-600);
+  }
+}

@@ -1,5 +1,6 @@
 entrypoint = "index.html"
-modules = ["web"]
+modules = ["typescript-language-server", "nodejs-24"]
+
 
 [nix]
 channel = "stable-24_11"

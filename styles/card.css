@@ -1,0 +1,22 @@
+.card {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  width: 100dvw;
+  height: 100dvh;
+  padding: 10rem 1rem 1rem 1rem;
+  background-color: var(--color-blue-950);
+  overflow-y: auto;
+}
+
+@media (min-width: 770px) {
+  .card {
+    width: 60dvw;
+    height: 90dvh;
+    border-radius: 1em;
+    box-shadow: 1em 1.5em 1em var(--color-indigo-950);
+    margin: 2rem;
+    font-size: 1.15em;
+    padding: 13rem 2rem 2rem 2rem;
+    max-width: 700px;
+  }
+}
