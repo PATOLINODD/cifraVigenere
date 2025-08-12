@@ -10,7 +10,7 @@
   font-weight: bolder;
   text-align: center;
   width: 100%;
-  box-shadow: 0 0 0.2em var(--color-shadow);
+  box-shadow: 0 0 0.2em var(--shadow);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: var(--color-bg-light);
@@ -18,15 +18,15 @@
 }
 
 .danger {
-  border: 2px solid var(--color-pink);
+  border: 2px solid var(--danger);
 }
 
 .warn {
-  border: 2px solid var(--color-orange);
+  border: 2px solid var(--warning);
 }
 
 .success {
-  border: 2px solid var(--color-text-muted);
+  border: 2px solid var(--info);
 }
 
 .fade-out {
