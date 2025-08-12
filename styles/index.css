@@ -51,7 +51,7 @@ button {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-
+  width: 100%;
   &:hover {
     background-color: hsl(240, 50%, 50%);
   }
@@ -129,9 +129,13 @@ strong {
     }
 }
 
-@media (min-width: 700) {
+@media (min-width: 700px) {
   body {
     font-size: 1.15rem;
+  }
+
+  button {
+    width: fit-content;
   }
 }
 
