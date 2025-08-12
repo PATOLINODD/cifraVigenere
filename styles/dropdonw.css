@@ -8,11 +8,11 @@
   top: anchor(bottom);
   margin-block-start: 1rem;
   padding: 2rem;
-  background-color: var(--color-blue-900);
+  background-color: var(--color-bg-dark);
   color: var(--color-cyan-200);
   border: none;
   border-radius: 1em;
-  box-shadow: 1em 1.5em 1em var(--color-indigo-950);
+  box-shadow: 0 0 1em var(--color-indigo-950);
   opacity: 0;
   transition: display 0.2s ease-out, opacity 0.2s ease-out;
   transition-behavior: allow-discrete;
@@ -36,4 +36,3 @@ fieldset {
 .relative {
   position: relative;
 }
-

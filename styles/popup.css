@@ -2,16 +2,17 @@
   position: fixed;
   z-index: 5;
   bottom: 1rem;
+  width: 100%;
 }
 
 .toast-message {
   font-size: 1.2rem;
   text-align: center;
-  width: 100dvw;
-  box-shadow: 1em 1.5em 1em var(--color-indigo-950);
+  width: 100%;
+  box-shadow: 0 0 0.2em var(--color-indigo-950);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: var(--color-blue-950);
+  background-color: var(--color-bg-light);
   animation: fade-in 0.3s ease-in-out;
 }
 
@@ -53,7 +54,7 @@
 }
 
 @media (min-width: 770px) {
-  .children {
-    width: 100%;
+  .popup {
+    width: 50dvw;
   }
 }
