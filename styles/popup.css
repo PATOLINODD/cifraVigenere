@@ -18,15 +18,15 @@
 }
 
 .danger {
-  border: 2px solid var(--color-pink-600);
+  border: 2px solid var(--color-pink);
 }
 
 .warn {
-  border: 2px solid var(--color-orange-600);
+  border: 2px solid var(--color-orange);
 }
 
 .success {
-  border: 2px solid var(--color-sky-600);
+  border: 2px solid var(--color-text);
 }
 
 .fade-out {
