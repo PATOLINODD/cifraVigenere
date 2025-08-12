@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.15rem;
+  font-size: 0.85rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,6 +123,12 @@ fieldset {
     100% {
       transform: translateX(0);
     }
+}
+
+@media (min-width: 700) {
+  body {
+    font-size: 1.15rem;
+  }
 }
 
 :root {
