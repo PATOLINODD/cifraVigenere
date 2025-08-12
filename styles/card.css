@@ -4,7 +4,7 @@
   width: 100dvw;
   height: 100dvh;
   padding: 10rem 1rem 1rem 1rem;
-  background-color: var(--color-blue-950);
+  background-color: var(--color-bg-mid);
   overflow-y: auto;
 }
 
@@ -13,7 +13,7 @@
     width: 60dvw;
     height: 90dvh;
     border-radius: 1em;
-    box-shadow: 1em 1.5em 1em var(--color-indigo-950);
+    box-shadow: 0 0 1em var(--color-indigo-950);
     margin: 2rem;
     font-size: 1.15em;
     padding: 13rem 2rem 2rem 2rem;
