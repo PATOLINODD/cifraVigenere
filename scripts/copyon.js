@@ -1,8 +1,17 @@
-const messageEl = document.getElementById("message");
-document.querySelector("#grafado").addEventListener("click", async (e) => {
-  e.target.select();
-  if (e.target.value) {
-    await navigator.clipboard.writeText(e.target.value);
-    popup("Texto copiado", "success");
-  }
+const messageEncoded = document.getElementById("grafado");
+messageEncoded.addEventListener("click", async (e) => {
+  await copyText(e.target.value);
 });
+
+document.getElementById("copy").addEventListener("click", async (e) => {
+  copyText(messageEncoded.value);
+})
+
+async function copyText(textToCopy) {
+  if(!textToCopy) {
+    popup("Não existe texto para ser copiado!", "warn");
+    return;
+  }
+  await navigator.clipboard.writeText(textToCopy);
+  popup("Texto copiado", "success");
+}
