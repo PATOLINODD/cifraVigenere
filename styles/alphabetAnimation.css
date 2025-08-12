@@ -1,0 +1,42 @@
+#alphabetStack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.alphabet-row {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.animate-to-right {
+    display: inline-block;
+    animation: to-the-right 15s linear alternate infinite;
+}
+
+.animate-to-left {
+    display: inline-block;
+    animation: to-the-left 15s linear alternate infinite;
+}
+
+@keyframes to-the-right {
+    0% {
+        transform: translateX(-45%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes to-the-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-45%);
+    }
+}

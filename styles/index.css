@@ -12,7 +12,7 @@ body {
   align-items: center;
   background-color: var(--color-bg-dark);
   color: var(--color-text-muted);
-  overflow: none;
+  overflow: hidden;
 }
 
 ul,
@@ -137,7 +137,7 @@ strong {
 
 :root {
   --color-bg-dark: hsl(220 100% 2%);
-  --color-bg-mid: hsl(220 100% 5%);
+  --color-bg-mid: hsla(220 100% 5%);
   --color-bg-light: hsl(220 86% 8%);
   --color-text: hsl(220 100% 95%);
   --color-text-muted: hsl(220 59% 69%);

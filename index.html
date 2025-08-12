@@ -12,6 +12,7 @@
     <link href="./styles/clicked.css?v=1.0.1" rel="stylesheet" type="text/css" />
     <link href="./styles/popup.css?v=1.0.1" rel="stylesheet" type="text/css" />
     <link href="./styles/positions.css?v=1.0.1" rel="stylesheet" type="text/css" />
+    <link href="./styles/alphabetAnimation.css?v=1.0.1" rel="stylesheet" type="text/css" />
     <script type="module">
       if (!("anchorName" in document.documentElement.style)) {
         import("https://unpkg.com/@oddbird/css-anchor-positioning");
@@ -161,8 +162,8 @@
       </button>
       </div>
     </div>
-
-    <div class="absolute" style="z-index: 1;"></div>
+    <div id="alphabetStack" style="pointer-events: none;">
+    </div>
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/dropdown.js"></script>
@@ -171,5 +172,6 @@
     <script src="./scripts/copyon.js"></script>
     <script src="./scripts/popupMessage.js"></script>
     <script src="./scripts/handleInput.js"></script>
+    <script src="./scripts/alphabetAnimation.js"></script>
   </body>
 </html>
