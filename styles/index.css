@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +20,9 @@ li {
   list-style: none;
 }
 
-h1 {
+h1, h2, h3 {
   color: var(--color-title);
+  margin-bottom: 0.5rem;
 }
 
 
@@ -63,13 +66,13 @@ input {
   border: none;
   border-radius: 8px;
   padding: 0.5em;
-  font-size: 1em;
   outline: none;
 }
 
 input, textarea {
   background-color: var(--color-bg-light);
   color: var(--color-text);
+  font-size: 1.15rem;
 }
 
 textarea {
@@ -77,8 +80,15 @@ textarea {
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  font-size: 1em;
   width: 100%;
+}
+
+fieldset {
+  border-radius: 0.5rem;
+  background-color: var(--color-bg-mid);
+  border: none;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .outline {
