@@ -19,12 +19,12 @@
   </head>
 
   <body>
-    <div class="card relative">
+    <div class="card relative flex-col-1">
       <header class="flex-row">
         <div class="flex-col-end">
-          <h1>EVIGENER</h1>
-          <h1>Cifra de VIGENERE</h1>
-          <h1>IGENEREV</h1>
+          <h1 style="margin: 0;">EVIGENER</h1>
+          <h1 style="margin: 0;">Cifra de VIGENERE</h1>
+          <h1 style="margin: 0;">IGENEREV</h1>
         </div>
       </header>
 
@@ -33,18 +33,17 @@
           <div class="flex-col">
             <label id="label">Digite uma chave: </label>
             <input
-              class="bg-gray outline"
+              class="outline"
               id="chave"
               type="text"
               placeholder="ex: campeao"
               maxlength="50"
             />
           </div>
-          <button class="highlight help" popovertarget="info">?</button>
         </div>
         <textarea
           id="grafar"
-          class="bg-gray outline"
+          class="outline"
           placeholder="seu texto a ser alterado"
           cols="25em"
           rows="5em"
@@ -55,39 +54,110 @@
         </section>
         <textarea
           id="grafado"
-          class="bg-gray outline"
+          class="outline"
           cols="25em"
           rows="5em"
           readonly
         ></textarea>
       </menu>
-    </div>
+      <button id="open">O QUE EU ESTOU VENDO?</button>
 
-    <dialog id="info" class="dropdown-info" popover>
-      <p>uma chave é um texto usado como referência para a codificação!</p>
-      <ul>
-        <fieldset>
-          <legend>Ex:</legend>
-          <li>chave</li>
-          <li>esse é meu texto</li>
-          <ul>
-            <fieldset>
-              <legend>Resultado:</legend>
-              <li>
-                <p>chavechavecha</p>
-              </li>
-              <li>
-                <p>esseemeutexto</p>
-              </li>
-            </fieldset>
-            <p>
-              Obs: a chave deve ser menor que seu texto. <br />
-              Salve a chave para descriptografar seu texto no futuro.
-            </p>
-          </ul>
+      <div id="info" class="dropdown-info flex-col">
+        <h3>A cifra de Vigenère é como um código secreto para esconder mensagens</h3>
+        <p>pense assim: </p>
+        <div class="flex-col">
+          <label>Você quer mandar uma mensagem para alguém, por exemplo:</label>
+          <fieldset>
+            Mensagem: <strong>GATO</strong>
+          </fieldset>
+        </div>
+        <br>
+        <br>
+        <div class="flex-col">
+          <label id="label">Você também tem uma <strong>palavra-chave secreta</strong> que só você e seu amigo sabem, por exemplo: </label>
+          <fieldset>
+          Chave: <strong>LUA</strong>
         </fieldset>
-      </ul>
-    </dialog>
+        </div>
+        <br><br>
+        <div class="flex-col">
+          <label for="">
+            <strong>Passo 1:</strong>
+             Escreva a palavra secreta várias vezes até ficar do tamanho da mensagem:
+          </label>
+          <fieldset>
+            <p>
+              Mensagem: <strong>G A T O</strong>  
+            </p> 
+            <p>
+              Chave: <span>&nbsp;&nbsp;&nbsp;</span><strong>L U A L</strong>
+            </p>
+          </fieldset>
+        </div>
+        <div class="flex-col">
+          <label for="">
+            <strong>Passo 2:</strong>
+             Passo 2: Agora pense que cada letra do alfabeto é um número:
+          </label>
+          <fieldset>
+            <p> 
+              A = 0, B = 1, C = 2, D = 3, E = 4, F = 5, G = 6, H = 7, I = 8, J = 9, K = 10, L = 11, M = 12, <br> 
+              N = 13, O = 14, P = 15, Q = 16, R = 17, S = 18, <br> 
+              T = 19, U = 20, V = 21, W = 22, X = 23, Y = 24, <br>
+              Z = 25
+            </p> 
+          </fieldset>
+        </div>
+        <div class="flex-col">
+          <label for="">
+            <strong>Passo 3: </strong>
+            Então para a mensagem GATO, temos o seguinte resultado: 
+          </label>
+          <fieldset>
+            <p>
+              G = 6, A = 0, T = 19, O = 14
+            </p>
+          </fieldset>
+          <label for="">
+            <strong>Passo 4: </strong>
+            E para a chave LUA, temos o seguinte resultado:
+          </label>
+          <fieldset>
+            <p>
+              L = 11, U = 20, A = 0
+            </p>
+          </fieldset>
+        </div>
+
+        <div class="flex-col">
+          <label for=""><strong>Passo 5: </strong>
+            Para cada letra da mensagem, você vai andar para frente no alfabeto o número que a letra da chave mandar.
+          </label>
+          <fieldset>
+            <p>
+              Começa com G <br>
+              G (06) + L (11) → chega no R <br>
+              A (00) + U (20) → chega no U <br>
+              T (19) + A (00) → continua T <br>
+              O (14) + L (11) → chega no Z
+            </p>
+          </fieldset>
+        </div>
+
+        <div class="flex-col">
+          <label for=""><strong>Mensagem escondida: </strong></label>
+          <fieldset><p>RUTZ</p></fieldset>
+          <p>Só quem souber a palavra secreta (<strong>LUA</strong>) consegue voltar para <strong>GATO</strong>.</p>
+        </div>
+
+      <button 
+        id="close" 
+        style="align-self: center; margin: 0.5rem 0; width: 100%;">
+        AGORA EU SEI O QUE É CIFRA VIGENERE
+      </button>
+      </div>
+
+    </div>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/dropdown.js"></script>
     <script src="./scripts/criptografrar.js"></script>
