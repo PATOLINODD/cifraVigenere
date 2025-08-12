@@ -1,17 +1,30 @@
 const messageEncoded = document.getElementById("grafado");
+let copied = false;
 messageEncoded.addEventListener("click", async (e) => {
-  await copyText(e.target.value);
+  if(!copied) {
+    copied = await copyText(e.target.value);
+  }
 });
 
 document.getElementById("copy").addEventListener("click", async (e) => {
-  copyText(messageEncoded.value);
+  if(!copied){
+    copied = await copyText(messageEncoded.value);
+    
+    if(copied){
+      e.target.innerText = "COPIADO";
+      setTimeout(()=>{
+        e.target.innerText = "COPIAR TEXTO";
+        copied = false;
+      }, 1000);
+    }
+  }
 })
 
 async function copyText(textToCopy) {
   if(!textToCopy) {
-    popup("Não existe texto para ser copiado!", "warn");
-    return;
+    return false;
   }
   await navigator.clipboard.writeText(textToCopy);
   popup("Texto copiado", "success");
+  return true;
 }
