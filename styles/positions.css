@@ -1,0 +1,11 @@
+.absolute {
+    position: absolute;
+}
+
+.top {
+    top: 1rem;
+}
+
+.right {
+    right: 1rem;
+}

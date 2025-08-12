@@ -46,7 +46,7 @@ header {
 
 button {
   background-color: var(--color-bg-light);
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 0.6rem;
   border: none;
   cursor: pointer;
