@@ -5,9 +5,9 @@ messageEncoded.addEventListener("click", async (e) => {
     copied = await copyText(e.target.value);
 
     if(copied){
-      e.target.innerText = "COPIADO";
+      document.getElementById("copy").innerText = "COPIADO";
       setTimeout(()=>{
-        e.target.innerText = "COPIAR TEXTO";
+        document.getElementById("copy").innerText = "COPIAR TEXTO";
         copied = false;
       }, 1000);
     }
