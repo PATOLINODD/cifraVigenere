@@ -1,7 +1,7 @@
 .popup {
   position: fixed;
   z-index: 5;
-  bottom: 1rem;
+  top: 1rem;
   width: 100%;
 }
 
@@ -15,6 +15,7 @@
   padding: 0.5rem 1rem;
   background-color: var(--color-bg-light);
   animation: fade-in 0.3s ease-in-out;
+  color: var(--color-text);
 }
 
 .danger {
