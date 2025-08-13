@@ -3,6 +3,14 @@ let copied = false;
 messageEncoded.addEventListener("click", async (e) => {
   if(!copied) {
     copied = await copyText(e.target.value);
+
+    if(copied){
+      e.target.innerText = "COPIADO";
+      setTimeout(()=>{
+        e.target.innerText = "COPIAR TEXTO";
+        copied = false;
+      }, 1000);
+    }
   }
 });
 
