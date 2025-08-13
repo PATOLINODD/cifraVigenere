@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -7,12 +7,32 @@
     <link href="./styles/index.css?v=1.0.1" rel="stylesheet" type="text/css" />
     <link href="./styles/card.css?v=1.0.1" rel="stylesheet" type="text/css" />
     <link href="./styles/flex.css?v=1.0.1" rel="stylesheet" type="text/css" />
-    <link href="./styles/dropdonw.css?v=1.0.1" rel="stylesheet" type="text/css" />
-    <link href="./styles/highlight.css?v=1.0.1" rel="stylesheet" type="text/css" />
-    <link href="./styles/clicked.css?v=1.0.1" rel="stylesheet" type="text/css" />
+    <link
+      href="./styles/dropdonw.css?v=1.0.1"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./styles/highlight.css?v=1.0.1"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./styles/clicked.css?v=1.0.1"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="./styles/popup.css?v=1.0.1" rel="stylesheet" type="text/css" />
-    <link href="./styles/positions.css?v=1.0.1" rel="stylesheet" type="text/css" />
-    <link href="./styles/alphabetAnimation.css?v=1.0.1" rel="stylesheet" type="text/css" />
+    <link
+      href="./styles/positions.css?v=1.0.1"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./styles/alphabetAnimation.css?v=1.0.1"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script type="module">
       if (!("anchorName" in document.documentElement.style)) {
         import("https://unpkg.com/@oddbird/css-anchor-positioning");
@@ -24,9 +44,9 @@
     <div class="card relative flex-col-1">
       <header class="flex-row">
         <div class="flex-col-end">
-          <h2 style="margin: 0;">EVIGENER</h2>
-          <h2 style="margin: 0;">Cifra de VIGENERE</h2>
-          <h2 style="margin: 0;">IGENEREV</h2>
+          <h2 style="margin: 0">EVIGENER</h2>
+          <h2 style="margin: 0">Cifra de VIGENERE</h2>
+          <h2 style="margin: 0">IGENEREV</h2>
         </div>
       </header>
 
@@ -56,114 +76,131 @@
         </section>
         <div class="relative">
           <textarea
-          id="grafado"
-          class="outline"
-          cols="25em"
-          rows="5em"
-          readonly
+            id="grafado"
+            class="outline"
+            cols="25em"
+            rows="5em"
+            readonly
           ></textarea>
-          <button id="copy" class="absolute top right" style="width: 10rem;">COPIAR TEXTO</button>
+          <button id="copy" class="absolute top right" style="width: 10rem">
+            COPIAR TEXTO
+          </button>
         </div>
       </menu>
-      <button id="open" style="width: 100%;">O QUE EU ESTOU VENDO?</button>
+      <button id="open" style="width: 100%; background-color: var(--warning)">
+        O QUE EU ESTOU VENDO?
+      </button>
 
-      <div id="info" class="dropdown-info flex-col">
-        <h3>A cifra de Vigenère é como um código secreto para esconder mensagens</h3>
-        <p>pense assim: </p>
+      <div id="info" class="dropdown-info flex-col-1">
+        <h3>
+          A cifra de Vigenère é como um código secreto para esconder mensagens
+        </h3>
+        <p>pense assim:</p>
         <div class="flex-col">
           <label>Você quer mandar uma mensagem para alguém, por exemplo:</label>
-          <fieldset>
-            Mensagem: <strong>GATO</strong>
-          </fieldset>
+          <fieldset>Mensagem: <strong>GATO</strong></fieldset>
         </div>
-        <br>
-        <br>
+        <br />
+        <br />
         <div class="flex-col">
-          <label id="label">Você também tem uma <strong>palavra-chave secreta</strong> que só você e seu amigo sabem, por exemplo: </label>
-          <fieldset>
-          Chave: <strong>LUA</strong>
-        </fieldset>
+          <label id="label"
+            >Você também tem uma <strong>palavra-chave secreta</strong> que só
+            você e seu amigo sabem, por exemplo:
+          </label>
+          <fieldset>Chave: <strong>LUA</strong></fieldset>
         </div>
-        <br><br>
+        <br /><br />
         <div class="flex-col">
           <label for="">
             <strong>Passo 1:</strong>
-             Escreva a palavra secreta várias vezes até ficar do tamanho da mensagem:
+            Escreva a palavra secreta várias vezes até ficar do tamanho da
+            mensagem:
           </label>
           <fieldset>
-            <p>
-              Mensagem: <strong>G A T O</strong>  
-            </p> 
+            <p>Mensagem: <strong>G A T O</strong></p>
             <p>
               Chave: <span>&nbsp;&nbsp;&nbsp;</span><strong>L U A L</strong>
             </p>
           </fieldset>
         </div>
+        <br /><br />
         <div class="flex-col">
           <label for="">
             <strong>Passo 2:</strong>
-             Passo 2: Agora pense que cada letra do alfabeto é um número:
-          </label>
-          <fieldset>
-            <p> 
-              A = 0, B = 1, C = 2, D = 3, E = 4, F = 5, G = 6, H = 7, I = 8, J = 9, K = 10, L = 11, M = 12, <br> 
-              N = 13, O = 14, P = 15, Q = 16, R = 17, S = 18, <br> 
-              T = 19, U = 20, V = 21, W = 22, X = 23, Y = 24, <br>
-              Z = 25
-            </p> 
-          </fieldset>
-        </div>
-        <div class="flex-col">
-          <label for="">
-            <strong>Passo 3: </strong>
-            Então para a mensagem GATO, temos o seguinte resultado: 
+            Passo 2: Agora pense que cada letra do alfabeto é um número:
           </label>
           <fieldset>
             <p>
-              G = 6, A = 0, T = 19, O = 14
+              A = 0, B = 1, C = 2, D = 3, E = 4, F = 5, G = 6, H = 7, I = 8, J =
+              9, K = 10, L = 11, M = 12, <br />
+              N = 13, O = 14, P = 15, Q = 16, R = 17, S = 18, <br />
+              T = 19, U = 20, V = 21, W = 22, X = 23, Y = 24, <br />
+              Z = 25
             </p>
           </fieldset>
+        </div>
+        <br /><br />
+        <div class="flex-col">
+          <label for="">
+            <strong>Passo 3: </strong>
+            Então para a mensagem GATO, temos o seguinte resultado:
+          </label>
+          <fieldset>
+            <p>G = 6, A = 0, T = 19, O = 14</p>
+          </fieldset>
+        </div>
+        <br><br>
+        <div class="flex-col">
           <label for="">
             <strong>Passo 4: </strong>
             E para a chave LUA, temos o seguinte resultado:
           </label>
           <fieldset>
-            <p>
-              L = 11, U = 20, A = 0
-            </p>
+            <p>L = 11, U = 20, A = 0</p>
           </fieldset>
         </div>
-
+        <br /><br />
         <div class="flex-col">
-          <label for=""><strong>Passo 5: </strong>
-            Para cada letra da mensagem, você vai andar para frente no alfabeto o número que a letra da chave mandar.
+          <label for=""
+            ><strong>Passo 5: </strong>
+            Para cada letra da mensagem, você vai andar para frente no alfabeto
+            o número que a letra da chave mandar.
           </label>
           <fieldset>
             <p>
-              Começa com G <br>
-              G (06) + L (11) → chega no R <br>
-              A (00) + U (20) → chega no U <br>
-              T (19) + A (00) → continua T <br>
+              Começa com G <br />
+              G (06) + L (11) → chega no R <br />
+              A (00) + U (20) → chega no U <br />
+              T (19) + A (00) → continua T <br />
               O (14) + L (11) → chega no Z
             </p>
           </fieldset>
         </div>
-
+        <br /><br />
         <div class="flex-col">
           <label for=""><strong>Mensagem escondida: </strong></label>
           <fieldset><p>RUTZ</p></fieldset>
-          <p>Só quem souber a palavra secreta (<strong>LUA</strong>) consegue voltar para <strong>GATO</strong>.</p>
+          <p>
+            Só quem souber a palavra secreta (<strong>LUA</strong>) consegue
+            voltar para <strong>GATO</strong>.
+          </p>
         </div>
 
-      <button 
-        id="close" 
-        style="align-self: center; margin: 0.5rem 0; width: 100%;">
-        AGORA EU SEI O QUE É CIFRA VIGENERE
-      </button>
+        <br><br>
+        <button
+          id="close"
+          style="
+            align-self: center;
+            margin: 1rem 0;
+            width: 100%;
+            background-color: var(--danger);
+          "
+        >
+          AGORA EU SEI O QUE É CIFRA VIGENERE
+        </button>
       </div>
     </div>
-    <div id="alphabetStack" style="pointer-events: none;">
-    </div>
+    <div id="alphabetStack" style="pointer-events: none"></div>
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/dropdown.js"></script>
