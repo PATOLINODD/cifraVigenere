@@ -3,28 +3,14 @@ let copied = false;
 messageEncoded.addEventListener("click", async (e) => {
   if(!copied) {
     copied = await copyText(e.target.value);
-
-    if(copied){
-      document.getElementById("copy").innerText = "COPIADO";
-      setTimeout(()=>{
-        document.getElementById("copy").innerText = "COPIAR TEXTO";
-        copied = false;
-      }, 1000);
-    }
+    copied = handleCopyAnimation(copied);
   }
 });
 
 document.getElementById("copy").addEventListener("click", async (e) => {
   if(!copied){
     copied = await copyText(messageEncoded.value);
-    
-    if(copied){
-      e.target.innerText = "COPIADO";
-      setTimeout(()=>{
-        e.target.innerText = "COPIAR TEXTO";
-        copied = false;
-      }, 1000);
-    }
+    copied = handleCopyAnimation(copied);
   }
 })
 
@@ -35,4 +21,17 @@ async function copyText(textToCopy) {
   await navigator.clipboard.writeText(textToCopy);
   popup("Texto copiado", "success");
   return true;
+}
+
+function handleCopyAnimation(wasCopied){
+  if(wasCopied) {
+    const copyButton = document.getElementById("copy");
+    copyButton.innerText = "COPIADO";
+    copyButton.style.backgroundColor = "var(--success)";
+    setTimeout(()=>{
+      copyButton.innerText = "COPIAR TEXTO";
+      copyButton.style.backgroundColor = "var(--warning)";
+    }, 1000);
+  }
+  return false;
 }

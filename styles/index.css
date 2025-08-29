@@ -149,17 +149,19 @@ strong {
 }
 
 :root {
-  --color-bg-dark: hsl(220 100% 2%);
-  --color-bg-mid: hsla(220 100% 5%);
-  --color-bg-light: hsl(220 86% 8%);
-  --color-text: hsl(220 100% 95%);
-  --color-text-muted: hsl(220 59% 69%);
-  --highlight: hsl(220 46% 38%);
-  --border: hsl(220 69% 26%);
-  --border-muted: hsl(220 100% 14%);
+  --color-bg-dark: hsl(220, 100%, 2%);
+  --color-bg-mid: hsl(220, 100%, 5%);
+  --color-bg-light: hsl(220, 86%, 8%);
+  --color-bg-lightest: hsl(220, 86%, 11%);
+  --color-text: hsl(220, 100%, 95%);
+  --color-text-muted: hsl(220, 59%, 69%);
+  --highlight: hsl(220, 46%, 38%);
+  --border: hsl(220, 69%, 26%);
+  --border-muted: hsl(220, 100%, 14%);
   --warning: hsl(20, 50%, 50%);
   --danger:  hsl(335, 50%, 50%);
+  --success:  hsl(150, 50%, 60%);
+  --info: hsl(217, 46%, 66%);
   --color-shadow: hsla(250, 50%, 0%, 0.074);
   --shadow: 0 2px 2px var(--color-shadow);
-  --info: hsl(217 46% 66%);
 }
