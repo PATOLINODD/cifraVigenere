@@ -160,7 +160,7 @@ strong {
   --border-muted: hsl(220, 100%, 14%);
   --warning: hsl(20, 50%, 50%);
   --danger:  hsl(335, 50%, 50%);
-  --success:  hsl(150, 50%, 60%);
+  --success:  hsl(120, 50%, 30%);
   --info: hsl(217, 46%, 66%);
   --color-shadow: hsla(250, 50%, 0%, 0.074);
   --shadow: 0 2px 2px var(--color-shadow);
