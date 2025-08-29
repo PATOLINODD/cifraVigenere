@@ -15,7 +15,7 @@ async function copyText(textToCopy) {
 
 async function handleCopyAnimation(event){
   copied = await copyText(messageEncoded.value);
-  if(!copied){
+  if(copied) {
     const copyButton = document.getElementById("copy");
     copyButton.innerText = "COPIADO";
     copyButton.style.backgroundColor = "var(--success)";
