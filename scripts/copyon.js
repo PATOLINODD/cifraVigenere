@@ -1,18 +1,8 @@
 const messageEncoded = document.getElementById("grafado");
 let copied = false;
-messageEncoded.addEventListener("click", async (e) => {
-  if(!copied) {
-    copied = await copyText(e.target.value);
-    copied = handleCopyAnimation(copied);
-  }
-});
+messageEncoded.addEventListener("click", handleCopyAnimation);
 
-document.getElementById("copy").addEventListener("click", async (e) => {
-  if(!copied){
-    copied = await copyText(messageEncoded.value);
-    copied = handleCopyAnimation(copied);
-  }
-})
+document.getElementById("copy").addEventListener("click", handleCopyAnimation)
 
 async function copyText(textToCopy) {
   if(!textToCopy) {
@@ -23,15 +13,16 @@ async function copyText(textToCopy) {
   return true;
 }
 
-function handleCopyAnimation(wasCopied){
-  if(wasCopied) {
+async function handleCopyAnimation(event){
+  if(!copied){
+    copied = await copyText(messageEncoded.value);
     const copyButton = document.getElementById("copy");
     copyButton.innerText = "COPIADO";
     copyButton.style.backgroundColor = "var(--success)";
     setTimeout(()=>{
       copyButton.innerText = "COPIAR TEXTO";
       copyButton.style.backgroundColor = "var(--warning)";
+      copied = false;
     }, 1000);
   }
-  return false;
 }
