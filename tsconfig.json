@@ -5,10 +5,9 @@
       "dom",
       "esnext",
       "esnext.asynciterable"
-    ]
+    ],
     "module": "preserve",
     "moduleResolution": "bundler",
-    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
