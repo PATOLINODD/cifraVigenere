@@ -15,12 +15,12 @@
 
 .animate-to-right {
     display: inline-block;
-    animation: to-the-right 15s linear alternate infinite;
+    animation: to-the-right 25s linear alternate infinite;
 }
 
 .animate-to-left {
     display: inline-block;
-    animation: to-the-left 15s linear alternate infinite;
+    animation: to-the-left 25s linear alternate infinite;
 }
 
 @keyframes to-the-right {

@@ -10,7 +10,7 @@ for(let i = 0; i < window.screen.height / 16; i++){
           A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
           A B C D E F G H I J K L M N O P Q R S T U V W X Y Z`);
     alphabetSpan.appendChild(alphabet);
-    alphabetSpan.style = "color: hsla(113, 100.00%, 31.00%, 0.05);";
+    alphabetSpan.style = "color: hsla(113, 100.00%, 21.00%, 0.05);";
     alphabetRow.appendChild(alphabetSpan);
     alphabetStack.appendChild(alphabetRow);
 }
